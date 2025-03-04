@@ -1,0 +1,48 @@
+baseURL = 'https://duncanchiu409.github.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'anatole'
+
+[params]
+# Sidebar
+contentratio = 0.7
+title = "I'm Tsz Wang Chiu"
+author = "Tsz Wang Chiu"
+description = "Call me Duncan 🤩" 
+profilePicture = "images/profile.png"
+favicon = "favicons/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:duncanchiu409@gmail.com"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/duncanchiu409/"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
