@@ -7,13 +7,14 @@ Categories:
 toc: true
 DisableComments: false
 ---
-Given two strings `text1` and `text2`, return _the length of their longest **common subsequence**._ If there is no **common subsequence**, return `0`.
+Given two strings ``text1`` and ``text2``, return _the length of their longest **common subsequence**._ If there is no **common subsequence**, return `0`.
 
 A **subsequence** of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
 
 - For example, `"ace"` is a subsequence of `"abcde"`.
 
 A **common subsequence** of two strings is a subsequence that is common to both strings.
+
 
 ## Solution
 ### Solution 1: Recursion
@@ -43,6 +44,7 @@ Space Complexity: $O(2^{(n+m)})$
 
 The complexity is stated at $O(n + m)$. However, I do not agree because we excluded the call stack memory. Where the complexity of space should be same as time.
 
+
 ### Solution 2: Dynamic Programming (Bottom Up)
 What is bottom up? From the later part of the inputs to the front of it. However, I could only imagine the `memo` approach in LC-1092 with behind the texts to front of the text. In the solution, an 2D `dp` array is used to store the computation. Be reminded that, because we know the end result of the string must be 0.
 
@@ -67,6 +69,7 @@ class Solution:
 Time Complexity: $O(m * n)$
 
 Space Complexity: $O(m * n)$
+
 
 ### Solution 3: Dynamic Programming (Space Optimized)
 
@@ -99,3 +102,4 @@ Time Complexity: $O(n * m)$
 Space Complexity: $O(m)$
 
 It is because there are only two arrays of size `m`.
+

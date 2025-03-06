@@ -2,16 +2,19 @@ baseURL = 'https://duncanchiu409.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'anatole'
-customCss = ["css/custom.css", "css/styles.css"]
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
 ## Sidebar settings
-contentratio = 0.7
+contentratio = 0.5
 title = "I'm Tsz Wang Chiu"
 author = "Tsz Wang Chiu"
 description = "Call me Duncan 🤩"
 profilePicture = "images/profile.png"
 favicon = "favicons/"
+customCss = ["css/custom.css", "css/syntax.css"]
 
 ## Math settings
 [params.math]
@@ -51,3 +54,8 @@ url = "https://github.com/duncanchiu409/"
   weight = 300
   identifier = "about"
   url = "/about/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe=false
