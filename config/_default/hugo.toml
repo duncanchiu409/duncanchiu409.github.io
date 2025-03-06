@@ -2,15 +2,21 @@ baseURL = 'https://duncanchiu409.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'anatole'
+customCss = ["css/custom.css", "css/styles.css"]
 
 [params]
-# Sidebar
+## Sidebar settings
 contentratio = 0.7
 title = "I'm Tsz Wang Chiu"
 author = "Tsz Wang Chiu"
-description = "Call me Duncan 🤩" 
+description = "Call me Duncan 🤩"
 profilePicture = "images/profile.png"
 favicon = "favicons/"
+
+## Math settings
+[params.math]
+enable = true  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "mathjax"  # options: "katex", "mathjax". default is "katex".
 
 [[params.socialIcons]]
 icon = "fas fa-envelope"
@@ -28,7 +34,6 @@ title = "GitHub"
 url = "https://github.com/duncanchiu409/"
 
 [menu]
-
   [[menu.main]]
   name = "Home"
   identifier = "home"
